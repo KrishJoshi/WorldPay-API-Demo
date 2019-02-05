@@ -1,0 +1,27 @@
+{
+  "transactionReference": "your-transaction-reference",
+  "instruction": {
+    "description": "book",
+    "value": {
+      "currency": "GBP",
+      "amount": 789
+    },
+    "paymentInstrument": {
+      "cvc": "666",
+      "type": "card/plain",
+      "cardNumber": "4444333322221111",
+      "cardHolderName": "John Appleseed",
+      "billingAddress": {
+        "address1": " 270-289 Milton Rd",
+        "address2": "Milton",
+        "countryCode": "GB",
+        "postalCode": "CB4 0WE",
+        "state": "CAMBS"
+      },
+      "cardExpiryDate": {
+        "month": 7,
+        "year": 2099
+      }
+    }
+  }
+}

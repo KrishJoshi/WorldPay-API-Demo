@@ -1,0 +1,10 @@
+.form-group {
+    padding: 10px;
+    flex-direction: row;
+
+}
+
+.form-group label, .form-group input {
+    flex-direction: row;
+    width: 100%;
+}

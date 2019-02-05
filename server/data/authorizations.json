@@ -1,0 +1,24 @@
+{
+  "outcome": "authorized",
+  "_links": {
+    "payments:cancel": {
+      "href": "http://localhost:3001/payments/authorizations/cancellations/:ref"
+    },
+    "payments:settle": {
+      "href": "http://localhost:3001/payments/settlements/full/:ref"
+    },
+    "payments:partialSettle": {
+      "href": "http://localhost:3001/payments/settlements/partials/:ref"
+    },
+    "payments:events": {
+      "href": "http://localhost:3001/payments/events/:ref"
+    },
+    "curies": [
+      {
+        "name": "payments",
+        "href": "http://localhost:3001/rels/payments/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

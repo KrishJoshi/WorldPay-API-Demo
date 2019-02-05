@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WorldPay API Demo
+
+Sample project using a mock version of WorldPay API to make calls to authorise and settle a transaction.
+
+### How it Works
+Project uses React, because of familiarity with the framework and it's simplicity.
+ 
+To create the mock backend project uses Express(node) to expose endpoints. I like that API uses HAL 
+which meant the API was triversable on the front-end without hard coding endpoints. 
+
+For future enhancement I've made the project pass the data through Index.js. If Redux was used in the 
+future, it would mean only one connection needs to be changed and rest of the application should remain mostly the same.
+ 
+For Testing Jest was used, Snapshots used to Regression testing, tests were written mostly 
+before (but edited as I progressed) 
+
+The CSS lives closest to the component using it. If it might be used globally, it's in index.css.
+
+#### How I made it
+- 10% - Understanding the API
+- 5% - Deciding the tools
+- 20% - Designing how it will work
+- 60% - Writing the code
+The API took some time to get my head around and then designing of application tool maybe 
+
+
+### What I would do differently 
+
+- Might have not used a framework  
+  - In hindsight it might have added to the complexity of the project.
+- I would use SASS instead of CSS
+- Use Atomic design, instead of keeping all the components in 1 folder.
+
+### Assumptions
+
+I've assumed, as this was a POC:
+- The API and Front-End is lacking error handling, in case API returns an error. 
+  - Including form validation
+- The company using this project follows the rules of compliance of API. As private data will be 
+sent via HTTP to 3rd party containing financial information.
+- I didn't have to follow strict security guidelines when taking card payment
+- Data for card is hardcoded on to front end
+  - It can easily be converted by passing in correct props
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
+Runs the app in the development mode. Starts the mock server and 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Launches the test runner in the interactive watch mode.

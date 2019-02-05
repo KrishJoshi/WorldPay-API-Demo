@@ -1,0 +1,14 @@
+{
+  "_links": {
+    "payments:events": {
+      "href": "https://try.access.worldpay.com/payments/events/:ref"
+    },
+    "curies": [
+      {
+        "name": "payments",
+        "href": "https://try.access.worldpay.com/rels/payments/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

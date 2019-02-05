@@ -1,0 +1,10 @@
+{
+  "_links": {
+    "payments:refund": {
+      "href": "http://localhost:3001/payments/settlements/refunds/full/:ref"
+    },
+    "payments:partialRefund": {
+      "href": "http://localhost:3001/payments/settlements/refunds/partials/:ref"
+    }
+  }
+}

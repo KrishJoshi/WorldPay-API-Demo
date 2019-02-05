@@ -1,0 +1,26 @@
+{
+  "_links": {
+    "resourceTree": {
+      "href": "http://localhost:3001/payments/resourceTree"
+    },
+    "payments:authorize": {
+      "href": "http://localhost:3001/payments/authorizations"
+    },
+    "payments:migrateRecurringAuthorizations": {
+      "href": "http://localhost:3001/payments/authorizations/migrateRecurring"
+    },
+    "payments:recurringMandate": {
+      "href": "http://localhost:3001/payments/recurringMandates"
+    },
+    "payments:events": {
+      "href": "http://localhost:3001/payments/events"
+    },
+    "curies": [
+      {
+        "name": "payments",
+        "href": "http://localhost:3001/rels/payments/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "loading": 1,
+  "inProcess": 2,
+  "authorised": 3,
+  "canceled": 4,
+  "payed": 5,
+  "refunded": 6
+}
